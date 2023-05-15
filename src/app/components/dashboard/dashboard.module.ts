@@ -10,13 +10,12 @@ import { AppComponent } from 'src/app/app.component';
 import { NgApexchartsModule } from 'ng-apexcharts';
 
 import { DashboardRoutingModule } from './dashboard-routing.module';
-import { SalesComponent } from './sales/sales.component';
+import { HomeComponent } from './home/home.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 
-import { TableComponent } from './sales/table/table.component';
 
 @NgModule({
-  declarations: [SalesComponent, TableComponent],
+  declarations: [HomeComponent],
   imports: [
     CommonModule,
     DashboardRoutingModule,

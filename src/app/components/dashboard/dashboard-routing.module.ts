@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { SalesComponent } from './sales/sales.component';
+import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
   {
     path: '',
     children: [
-      { path: 'dashboard/inicio', title: 'Inicio', component: SalesComponent },
+      { path: 'dashboard/inicio', title: 'Inicio', component: HomeComponent },
     ],
   },
 ];

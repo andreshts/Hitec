@@ -1,13 +1,6 @@
 import { Routes } from '@angular/router';
 
 export const content: Routes = [
-  {
-    path: '',
-    loadChildren: () =>
-      import('../../components/widget/widget.module').then(
-        (m) => m.WidgetModule
-      ),
-  },
 
   {
     path: '',

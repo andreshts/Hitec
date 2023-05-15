@@ -51,10 +51,10 @@ const DATATABL: any = [{
 },]
 @Component({
   selector: 'app-sales',
-  templateUrl: './sales.component.html',
-  styleUrls: ['./sales.component.scss']
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.scss']
 })
-export class SalesComponent implements OnInit {
+export class HomeComponent implements OnInit {
   @ViewChild('Canvas') Canvas: ElementRef | any;
   @ViewChild('myCanvas') myCanvas: ElementRef | any;
   @ViewChild('myCanvas1') myCanvas1: ElementRef | any;
