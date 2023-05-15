@@ -38,7 +38,7 @@ export class LoginPageComponent implements OnInit {
     if (this.validateForm(this.email, this.password)) {
       this.authservice.loginWithEmail(this.email, this.password)
         .then(() => {
-         this.router.navigate(['/dashboard/sales'])
+         this.router.navigate(['/dashboard/inicio'])
         //  console.clear()
         }).catch((_error:any)=> {
           this._error = _error
@@ -80,7 +80,7 @@ export class LoginPageComponent implements OnInit {
     this.disabled = "btn-loading"
     if (this.loginForm.controls['username'].value === "spruko@admin.com" && this.loginForm.controls['password'].value === "sprukoadmin" )
     {
-      this.router.navigate(['/dashboard/sales']);
+      this.router.navigate(['/dashboard/inicio']);
     }
     else{
       this.error = "Please check email and passowrd"
