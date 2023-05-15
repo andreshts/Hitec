@@ -14,11 +14,5 @@ export const content: Routes = [
         (m) => m.DashboardModule
       ),
   },
-  {
-    path: '',
-    loadChildren: () =>
-      import('../../components/ecommerce/ecommerce.module').then(
-        (m) => m.EcommerceModule
-      ),
-  },
+
 ];

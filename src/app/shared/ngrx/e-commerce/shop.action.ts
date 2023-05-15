@@ -1,5 +1,5 @@
 import { createAction, props } from "@ngrx/store";
-import { ShopDataState } from 'src/app/components/ecommerce/shop/shop.component';
+
 
 export const getShopData = createAction('[ShopData] Get data')
 export const addShopData = createAction('[ShopData] Add data', (data:any) => data)
