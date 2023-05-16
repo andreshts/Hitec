@@ -167,99 +167,6 @@
                 </div>
               </div>
 
-              <div ngbDropdown class="dropdown header-notify">
-                <a class="nav-link icon " data-bs-toggle="dropdown" ngbDropdownToggle>
-                  <i class="bx bx-envelope header-icon"></i>
-                  <span class=" nav-unread badge badge-warning badge-pill">6</span>
-                </a>
-
-                <div ngbDropdownMenu class="dropdown-menu dropdown-menu-end dropdown-menu-arrow ">
-
-                  <div class="notifications-scroll2 ">
-                    <ng-scrollbar>
-                      <a routerLink="/apps/chat" ngbDropdownItem class="dropdown-item d-flex mt-2 pb-3 ">
-                        <div class="avatar avatar-md brround me-3 d-block cover-image"
-                          data-image-src="./assets/images/users/male/4.jpg"
-                          style="background: url(./assets/images/users/male/4.jpg) center center;">
-                          <span class="avatar-status bg-green"></span>
-                        </div>
-
-                        <div class="header-notify-msg">
-                          <h6 class="mb-1">Lucas Walsh</h6>
-                          <p class="mb-0 fs-13 ">Hey! there I' am available</p>
-                          <div class="small text-muted">3 hours ago</div>
-                        </div>
-                      </a>
-                      <a routerLink="/apps/chat" ngbDropdownItem class="dropdown-item d-flex pb-3">
-                        <div class="avatar avatar-md brround me-3 d-block cover-image"
-                          data-image-src="./assets/images/users/female/1.jpg"
-                          style="background: url(./assets/images/users/female/1.jpg) center center;">
-                          <span class="avatar-status bg-red"></span>
-                        </div>
-                        <div>
-                          <h6 class="mb-1">Rebecca Short</h6>
-                          <p class="mb-0 fs-13 ">New product Launching</p>
-                          <div class="small text-muted">5 hours ago</div>
-                        </div>
-                      </a>
-                      <a href="/apps/chat" ngbDropdownItem class="dropdown-item d-flex pb-3">
-                        <div class="avatar avatar-md brround me-3 d-block cover-image"
-                          data-image-src="./assets/images/users/male/1.jpg"
-                          style="background: url(./assets/images/users/male/1.jpg) center center;">
-                          <span class="avatar-status bg-gray"></span>
-                        </div>
-                        <div>
-                          <h6 class="mb-1">Dennis Viol</h6>
-                          <p class="mb-0 fs-13 ">Products page updated.</p>
-                          <div class="small text-muted">5 hours ago</div>
-                        </div>
-                      </a>
-                      <a href="/apps/chat" ngbDropdownItem class="dropdown-item d-flex pb-3">
-                        <div class="avatar avatar-md brround me-3 d-block cover-image"
-                          data-image-src="./assets/images/users/female/7.jpg"
-                          style="background: url(./assets/images/users/female/7.jpg) center center;">
-                          <span class="avatar-status bg-success"></span>
-                        </div>
-                        <div>
-                          <h6 class="mb-1">Enna Sheru</h6>
-                          <p class="mb-0 fs-13 ">New product Launching</p>
-                          <div class="small text-muted">5 hours ago</div>
-                        </div>
-                      </a>
-                      <a href="/apps/chat" ngbDropdownItem class="dropdown-item d-flex pb-3">
-                        <div class="avatar avatar-md brround me-3 d-block cover-image"
-                          data-image-src="./assets/images/users/male/4.jpg"
-                          style="background: url(./assets/images/users/male/.jpg) center center;">
-                          <span class="avatar-status bg-red"></span>
-                        </div>
-                        <div>
-                          <h6 class="mb-1">Nicholas Angel</h6>
-                          <p class="mb-0 fs-13 ">2 New Products added</p>
-                          <div class="small text-muted">5 hours ago</div>
-                        </div>
-                      </a>
-                      <a href="/apps/chat" ngbDropdownItem class="dropdown-item d-flex pb-3">
-                        <div class="avatar avatar-md brround me-3 d-block cover-image"
-                          data-image-src="./assets/images/users/female/8.jpg"
-                          style="background: url(./assets/images/users/female/8.jpg) center center;">
-                          <span class="avatar-status bg-yellow"></span>
-                        </div>
-                        <div>
-                          <h6 class="mb-1">Nicola Vance</h6>
-                          <p class="mb-0 fs-13">New Schedule Realease</p>
-                          <div class="small text-muted">45 mintues ago</div>
-                        </div>
-                      </a>
-                    </ng-scrollbar>
-                  </div>
-
-                  <div ngbDropdownItem class="text-center p-2 border-top">
-                    <a routerLink="/apps/chat" class="">View All Notifications</a>
-                  </div>
-
-                </div>
-
-              </div>
 
               <div ngbDropdown class="dropdown profile-dropdown">
                 <a ngbDropdownToggle href="javascript:void(0)" class="nav-link icon px-1" data-bs-toggle="dropdown">
@@ -288,12 +195,6 @@
                     <i class="fe fe-log-out me-2"></i> <span>Logout</span>
                   </a>
                 </div>
-              </div>
-              <div class="dropdown header-sidebar">
-                <a (click)="toggleSidebarNotification()" class="nav-link icon sidebar-right-mobile"
-                  data-bs-toggle="sidebar-right" data-bs-target=".sidebar-right">
-                  <i class="bx bx-menu-alt-right header-icon"></i>
-                </a>
               </div>
             </div>
           </div>
