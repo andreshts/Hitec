@@ -20,4 +20,11 @@ export const content: Routes = [
         (m) => m.ClientModule
       ),
   },
+  {
+    path: '',
+    loadChildren: () =>
+      import('../../components/reports/reports.module').then(
+        (m) => m.ReportsModule
+      ),
+  },
 ];
