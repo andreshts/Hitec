@@ -99,11 +99,68 @@ export class NavService implements OnDestroy {
     {
       title: 'Clientes',
       icon: 'credit-card',
-      active: true,
-      badgeClass: 'badge badge-sm bg-secondary badge-hide',
-      badgeValue: 'new',
-      path: '/widget/widget',
-      type: 'link',
+      active: false,
+      type: 'sub',
+      Menusub: true,
+      children: [
+        {
+          path: '/cliente/lista-clientes',
+          title: 'Lista de Clientes',
+          type: 'link',
+        },
+      ],
+    },
+    {
+      title: 'Reportes',
+      icon: 'file-text',
+      active: false,
+      type: 'sub',
+      Menusub: true,
+      children: [
+        {
+          path: '/reportes/reporte-mantenimiento',
+          title: 'Reporte de Mantenimiento',
+          type: 'link',
+        },
+        {
+          path: '/reportes/reporte-averia',
+          title: 'Reporte de avería',
+          type: 'link',
+        },
+        {
+          path: '/reportes/comprobante-ejecucion',
+          title: 'Comprobante ejecución',
+          type: 'link',
+        },
+      ],
+    },
+    {
+      title: 'Usuarios',
+      icon: 'user-plus',
+      active: false,
+      type: 'sub',
+      Menusub: true,
+      children: [
+        {
+          path: '/usuarios/lista-usuarios',
+          title: 'Lista de Usuarios',
+          type: 'link',
+        },
+      ],
+    },
+    {
+      title: 'Control Vehiculos',
+      icon: 'book-open',
+      active: false,
+      type: 'sub',
+      Menusub: true,
+      children: [
+        {
+          path: '/control/control-kilometraje',
+          title: 'Control Kilometraje',
+          type: 'link',
+        },
+      ],
     },
   ];
 

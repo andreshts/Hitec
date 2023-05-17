@@ -1,7 +1,6 @@
 import { Routes } from '@angular/router';
 
 export const content: Routes = [
-
   {
     path: '',
     loadChildren: () =>
@@ -14,5 +13,11 @@ export const content: Routes = [
         (m) => m.DashboardModule
       ),
   },
-
+  {
+    path: '',
+    loadChildren: () =>
+      import('../../components/client/client.module').then(
+        (m) => m.ClientModule
+      ),
+  },
 ];

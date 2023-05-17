@@ -17,6 +17,7 @@ import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
 import { dataReaducer } from './shared/ngrx/e-commerce/shop.reducers';
+import { ClientComponent } from './components/client/client-list/client-list.component';
 
 @NgModule({
   declarations: [AppComponent],

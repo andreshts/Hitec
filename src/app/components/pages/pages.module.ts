@@ -17,16 +17,11 @@ import { PricingTablesComponent } from './pricing-tables/pricing-tables.componen
 import { SwitcherComponent } from './switcher/switcher.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import'hammerjs';
+import 'hammerjs';
 import 'mousetrap';
 import { GalleryModule } from '@ks89/angular-modal-gallery';
 import { ColorPickerModule } from 'ngx-color-picker';
 import { NgSelectModule } from '@ng-select/ng-select';
-
-
-
-
-
 
 @NgModule({
   declarations: [
@@ -42,24 +37,18 @@ import { NgSelectModule } from '@ng-select/ng-select';
     TermsComponent,
     InvoiceComponent,
     PricingTablesComponent,
-    SwitcherComponent
+    SwitcherComponent,
   ],
 
   imports: [
-
-  CommonModule,
+    CommonModule,
     PagesRoutingModule,
     SharedModule,
     NgbModule,
     GalleryModule,
-ColorPickerModule,
+    ColorPickerModule,
 
-NgSelectModule
-
+    NgSelectModule,
   ],
-
-
-
-
 })
-export class PagesModule { }
+export class PagesModule {}
