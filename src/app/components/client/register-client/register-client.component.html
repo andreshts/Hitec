@@ -1,0 +1,51 @@
+<!-- Modal -->
+<ng-template #registerClientModal let-modal>
+  <div class="modal-header">
+    <h5 class="modal-title" id="exampleModalLabel">Agregar cliente</h5>
+    <button type="button" class="btn-close" (click)="modal.close('by: close icon')" aria-label="Close"></button>
+  </div>
+  <div class="modal-body">
+    <div class="row">
+      <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-2">
+        <label for="name">
+          Nombre del cliente
+          <span class="text-danger">*</span></label>
+        <input type="text" class="form-control" id="name" autocomplete="name" placeholder="Usuario" />
+      </div>
+      <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-2">
+        <label for="name">
+          Encargado
+          <span class="text-danger">*</span></label>
+        <input type="text" class="form-control" id="name" autocomplete="name" placeholder="Usuario" />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-2">
+        <label for="name">
+          Teléfono
+          <span class="text-danger">*</span></label>
+        <input type="text" class="form-control" id="name" autocomplete="name" placeholder="Usuario" />
+      </div>
+      <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-2">
+        <label for="name">
+          Correo
+          <span class="text-danger">*</span></label>
+        <input type="text" class="form-control" id="name" autocomplete="name" placeholder="Usuario" />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-2">
+        <label for="name">
+          Dirección
+          <span class="text-danger">*</span></label>
+        <input type="text" class="form-control" id="name" autocomplete="name" placeholder="Usuario" />
+      </div>
+    </div>
+  </div>
+  <div class="modal-footer">
+
+    <button type="button" class="btn btn-secondary" (click)="modal.close('by: close button')">Close</button>
+    <button type="button" class="btn btn-primary" (click)="modal.close('by: save button')">Save changes</button>
+  </div>
+</ng-template>
+

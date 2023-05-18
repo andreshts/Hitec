@@ -108,6 +108,11 @@ export class NavService implements OnDestroy {
           title: 'Lista de Clientes',
           type: 'link',
         },
+        {
+          path: '/cliente/lista-equipos',
+          title: 'Lista de Equipos',
+          type: 'link',
+        },
       ],
     },
     {
@@ -146,6 +151,7 @@ export class NavService implements OnDestroy {
           title: 'Lista de Usuarios',
           type: 'link',
         },
+
       ],
     },
     {
