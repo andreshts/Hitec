@@ -4,7 +4,7 @@ import { SwitcherComponent } from "src/app/components/pages/switcher/switcher.co
 SwitcherComponent
 export const SwitcherOneRoute: Routes = [
     {
-        path: 'switcher-one-route',title:"Slica-Switcher" ,component:SwitcherComponent
+        path: 'switcher-one-route',title:"Switcher" ,component:SwitcherComponent
     }
 ];
 
