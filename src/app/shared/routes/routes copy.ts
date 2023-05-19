@@ -27,4 +27,11 @@ export const content: Routes = [
         (m) => m.ReportsModule
       ),
   },
+  {
+    path: '',
+    loadChildren: () =>
+      import('../../components/users/users.module').then(
+        (m) => m.UsersModule
+      ),
+  },
 ];

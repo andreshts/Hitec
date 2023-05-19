@@ -151,6 +151,11 @@ export class NavService implements OnDestroy {
           title: 'Lista de Usuarios',
           type: 'link',
         },
+        {
+          path: '/usuarios/control-horario',
+          title: 'Control Horario',
+          type: 'link',
+        },
 
       ],
     },

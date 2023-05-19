@@ -1,0 +1,58 @@
+<app-page-header title="Usuarios" active_item="Lista usuarios"></app-page-header>
+
+<div class="row">
+  <div class="col-md-12 stretch-card">
+    <div class="card">
+      <div class="card-body">
+        <div>
+          <div class="ms-auto align-self-center" style="text-align: right;">
+            <a href="javascript:void(0)" (click)="openRegisterUserModal()"
+              class="btn btn-primary btn-icon text-white me-1">
+              <i class="fe fe-plus"></i>
+            </a>
+          </div>
+
+          <input type="text" class="form-control bg-transparent border-0 rounded-0 text-center"
+            style="padding: 8px; margin: 15px auto; width: 30%" placeholder="Type to filter the name column..."
+            (keyup)="updateFilter($event)" />
+
+          <ngx-datatable #table class="material" [rows]="rows" [loadingIndicator]="loadingIndicator"
+            [columnMode]="ColumnMode.force" [footerHeight]="50" [limit]="10" [rowHeight]="getRowHeight"
+            [reorderable]="reorderable" [scrollbarH]="scrollBarHorizontal" responsive="true">
+            <ngx-datatable-column name="Nombre" class="force-flex flex-nowrap" [flexGrow]="1">
+              <ng-template let-row="row" ngx-datatable-cell-template>
+                {{ row.name }}
+              </ng-template>
+            </ngx-datatable-column>
+            <ngx-datatable-column name="Apellidos" class="force-flex flex-nowrap" [flexGrow]="1">
+              <ng-template let-row="row" ngx-datatable-cell-template>
+                Prueba
+              </ng-template>
+            </ngx-datatable-column>
+            <ngx-datatable-column name="Rol" class="force-flex flex-nowrap" [flexGrow]="1">
+              <ng-template let-row="row" ngx-datatable-cell-template>
+                Prueba
+              </ng-template>
+            </ngx-datatable-column>
+            <ngx-datatable-column name="Correo" class="force-flex flex-nowrap" [flexGrow]="1">
+              <ng-template let-row="row" ngx-datatable-cell-template>
+                Prueba
+              </ng-template>
+            </ngx-datatable-column>
+            <ngx-datatable-column name="Teléfono" class="force-flex flex-nowrap" [flexGrow]="1">
+              <ng-template let-row="row" ngx-datatable-cell-template>
+                Prueba
+              </ng-template>
+            </ngx-datatable-column>
+            <ngx-datatable-column name="Fecha registro" class="force-flex flex-nowrap" [flexGrow]="1">
+              <ng-template let-row="row" ngx-datatable-cell-template>
+                Prueba
+              </ng-template>
+            </ngx-datatable-column>
+          </ngx-datatable>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<app-register-user></app-register-user>
