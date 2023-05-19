@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "slica": {
+    "hitec": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -92,10 +92,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "slica:build:production"
+              "browserTarget": "hitec:build:production"
             },
             "development": {
-              "browserTarget": "slica:build:development"
+              "browserTarget": "hitec:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -103,7 +103,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "slica:build"
+            "browserTarget": "hitec:build"
           }
         },
         "test": {
