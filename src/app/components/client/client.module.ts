@@ -14,7 +14,7 @@ import { RegisterClientComponent } from './register-client/register-client.compo
 import { EquipmentListComponent } from './equipment-list/equipment-list.component';
 import { QrEquipmentDetailComponent } from './qr-equipment-detail/qr-equipment-detail.component';
 import { RegisterEquipmentComponent } from './register-equipment/register-equipment.component';
-import { QrCodeModule } from 'ng-qrcode';
+import { QRCodeModule } from 'angularx-qrcode';
 
 @NgModule({
   declarations: [
@@ -36,7 +36,7 @@ import { QrCodeModule } from 'ng-qrcode';
     FormsModule,
     ReactiveFormsModule,
     NgbModule,
-    QrCodeModule
+    QRCodeModule
   ],
 })
 export class ClientModule {}

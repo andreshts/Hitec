@@ -29,7 +29,7 @@
     </div>
     <div class="row">
       <div class="col text-center">
-        <qr-code value="Andres" size="300" errorCorrectionLevel="M" id="myQrCode"></qr-code>
+        <qrcode [qrdata]="myAngularxQrCode" [width]="256" [errorCorrectionLevel]="'M'" id="myQrCode"></qrcode>
       </div>
     </div>
   </div>

@@ -43,7 +43,7 @@
     "angular-responsive-carousel": "^2.1.2",
     "angular-ui-carousel": "^0.1.10",
     "angular2-multiselect-dropdown": "^5.0.4",
-    "angularx-qrcode": "^16.0.0",
+    "angularx-qrcode": "^15.0.1",
     "autoprefixer": "^10.4.13",
     "bingmaps": "^2.0.3",
     "bootstrap": "^5.2.3",

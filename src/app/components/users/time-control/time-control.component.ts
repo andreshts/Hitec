@@ -20,6 +20,7 @@ export class TimeControlComponent {
   reorderable = true;
   scrollBarHorizontal = window.innerWidth < 1200;
 
+
   @ViewChild('table') table!: DatatableComponent;
   @ViewChild(UbicationDetailComponent, { static: false })
   UbicationDetailComponent!: UbicationDetailComponent;
@@ -44,6 +45,8 @@ export class TimeControlComponent {
       this.table.recalculateColumns();
     }
   }
+
+
 
   getRowHeight(row: any) {
     return row.height;
