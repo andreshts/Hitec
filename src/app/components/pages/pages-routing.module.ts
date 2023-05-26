@@ -28,9 +28,8 @@ const routes: Routes = [
       {path:"pages/mailcompose",title:"Slica-MailCompose",component:MailComposeComponent},
       {path:"pages/mailinbox",title:"Slica-MailInbox",component:MailInboxComponent},
       {path:"pages/pricingtables",title:"Slica-PricingTables",component:PricingTablesComponent},
-      {path:"pages/profile",title:"Slica-Profile",component:ProfileComponent},
+      {path:"pages/profile",title:"Perfil",component:ProfileComponent},
       {path:"pages/services",title:"Slica-Services",component:ServicesComponent},
-      // {path:"pages/switcher",component:SwitcherComponent},
       {path:"pages/terms",title:"Slica-Terms",component:TermsComponent},
     ]
   }

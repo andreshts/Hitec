@@ -15,14 +15,14 @@ export class LoginPageComponent implements OnInit {
 
   ngOnInit(): void {
     this.loginForm = this.formBuilder.group({
-      username : ['spruko@admin.com',[Validators.required, Validators.email]],
-      password : ['sprukoadmin', Validators.required]
+      username : ['andres91411@gmail.com',[Validators.required, Validators.email]],
+      password : ['test123', Validators.required]
     });
   }
 
   // firebase
-  email = "spruko@admin.com";
-  password = "sprukoadmin";
+  email = "andres91411@gmail.com";
+  password = "test123";
   errorMessage = ''; // validation _error handle
   _error: { name: string, message: string } = { name: '', message: '' }; // for firbase _error handle
 
@@ -78,7 +78,7 @@ export class LoginPageComponent implements OnInit {
 
   Submit(){
     this.disabled = "btn-loading"
-    if (this.loginForm.controls['username'].value === "spruko@admin.com" && this.loginForm.controls['password'].value === "sprukoadmin" )
+    if (this.loginForm.controls['username'].value === "andres91411@gmail.com" && this.loginForm.controls['password'].value === "test123" )
     {
       this.router.navigate(['/dashboard/inicio']);
     }
