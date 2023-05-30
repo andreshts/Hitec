@@ -1,1 +1,113 @@
-<p>fault-report works!</p>
+<app-page-header title="Reportes" active_item="Reportes de avería"></app-page-header>
+
+
+<div class="row">
+  <div class="col-md-12 stretch-card">
+    <div class="card">
+      <div class="card-body">
+
+        <div>
+          <div class="ms-auto align-self-center" style="text-align: right;">
+            <a href="javascript:void(0)"  class="btn btn-primary btn-icon text-white me-1">
+              <i class="fe fe-plus"></i>
+            </a>
+          </div>
+
+          <input type="text" class="form-control bg-transparent border-0 rounded-0 text-center"
+            style="padding: 8px; margin: 15px auto; width: 30%" placeholder="Type to filter the name column..."
+            (keyup)="updateFilter($event)" />
+
+          <ngx-datatable #table class="material" [rows]="rows" [loadingIndicator]="loadingIndicator"
+            [columnMode]="ColumnMode.force" [footerHeight]="50" [limit]="10" rowHeight="auto"
+            [reorderable]="reorderable" [scrollbarH]="scrollBarHorizontal" responsive="true">
+            <ngx-datatable-column name="Dispositivo" class="force-flex flex-nowrap" [flexGrow]="1">
+              <ng-template let-row="row" ngx-datatable-cell-template>
+                Prueba
+              </ng-template>
+            </ngx-datatable-column>
+            <ngx-datatable-column name="Cédula" class="force-flex flex-nowrap" [flexGrow]="1">
+              <ng-template let-row="row" ngx-datatable-cell-template>
+                Prueba
+              </ng-template>
+            </ngx-datatable-column>
+            <ngx-datatable-column name="Cliente">
+              <ng-template let-row="row" ngx-datatable-cell-template>
+                Prueba
+              </ng-template>
+            </ngx-datatable-column>
+            <ngx-datatable-column name="Encargado">
+              <ng-template let-row="row" ngx-datatable-cell-template>
+                Prueba
+              </ng-template>
+            </ngx-datatable-column>
+            <ngx-datatable-column name="Teléfono">
+              <ng-template let-row="row" ngx-datatable-cell-template>
+                Prueba
+              </ng-template>
+            </ngx-datatable-column>
+            <ngx-datatable-column name="Hora inicio">
+              <ng-template let-row="row" ngx-datatable-cell-template>
+                Prueba
+              </ng-template>
+            </ngx-datatable-column>
+            <ngx-datatable-column name="Hora final">
+              <ng-template let-row="row" ngx-datatable-cell-template>
+                Prueba
+              </ng-template>
+            </ngx-datatable-column>
+            <ngx-datatable-column name="Observaciones">
+              <ng-template let-row="row" ngx-datatable-cell-template>
+                Prueba
+              </ng-template>
+            </ngx-datatable-column>
+            <ngx-datatable-column name="Día">
+              <ng-template let-row="row" ngx-datatable-cell-template>
+                Prueba
+              </ng-template>
+            </ngx-datatable-column>
+            <ngx-datatable-column name="No. Personas">
+              <ng-template let-row="row" ngx-datatable-cell-template>
+                Prueba
+              </ng-template>
+            </ngx-datatable-column>
+            <ngx-datatable-column name="No. Horas">
+              <ng-template let-row="row" ngx-datatable-cell-template>
+                Prueba
+              </ng-template>
+            </ngx-datatable-column>
+            <ngx-datatable-column name="Ubicación">
+              <ng-template let-row="row" ngx-datatable-cell-template>
+                Prueba
+              </ng-template>
+            </ngx-datatable-column>
+            <ngx-datatable-column name="Modelo">
+              <ng-template let-row="row" ngx-datatable-cell-template>
+                Prueba
+              </ng-template>
+            </ngx-datatable-column>
+            <ngx-datatable-column name="Serie">
+              <ng-template let-row="row" ngx-datatable-cell-template>
+                Prueba
+              </ng-template>
+            </ngx-datatable-column>
+            <ngx-datatable-column name="Placa equipo">
+              <ng-template let-row="row" ngx-datatable-cell-template>
+                Prueba
+              </ng-template>
+            </ngx-datatable-column>
+            <ngx-datatable-column name="No. Activo">
+              <ng-template let-row="row" ngx-datatable-cell-template>
+                Prueba
+              </ng-template>
+            </ngx-datatable-column>
+            <ngx-datatable-column name="Detalle del trabajo">
+              <ng-template let-row="row" ngx-datatable-cell-template>
+                Prueba
+              </ng-template>
+            </ngx-datatable-column>
+          </ngx-datatable>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
