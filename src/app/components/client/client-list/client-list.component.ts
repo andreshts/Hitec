@@ -9,7 +9,7 @@ import { RegisterClientComponent } from '../register-client/register-client.comp
   styleUrls: ['./client-list.component.scss'],
 })
 export class ClientComponent {
-  rows = [];
+  rows = ['prueba'];
   temp = [];
   swapColumns = false;
   ColumnMode = ColumnMode;

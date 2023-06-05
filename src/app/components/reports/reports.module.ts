@@ -12,14 +12,16 @@ import { DataTablesModule } from 'angular-datatables';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { MaterialModuleModule } from 'src/app/materialModule/material-module/material-module.module';
 import { SharedModule } from 'src/app/shared/shared.module';
-
+import { FaultReportDetailsComponent } from './fault-report/fault-report-details/fault-report-details.component';
+import { GalleryModule } from '@ks89/angular-modal-gallery';
 
 
 @NgModule({
   declarations: [
     FaultReportComponent,
     MaintenanceReportComponent,
-    ProofOfExecutionComponent
+    ProofOfExecutionComponent,
+    FaultReportDetailsComponent
   ],
   imports: [
     CommonModule,
@@ -33,6 +35,7 @@ import { SharedModule } from 'src/app/shared/shared.module';
     FormsModule,
     ReactiveFormsModule,
     NgbModule,
+    GalleryModule
   ]
 })
 export class ReportsModule { }
