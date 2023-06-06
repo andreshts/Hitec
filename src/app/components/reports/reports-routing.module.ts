@@ -2,6 +2,7 @@ import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
 import { MaintenanceReportComponent } from "./maintenance-report/maintenance-report.component";
 import { FaultReportComponent } from "./fault-report/fault-report.component";
+import { ProofOfExecutionComponent } from "./proof-of-execution/proof-of-execution.component";
 
 const routes: Routes = [
   {
@@ -14,6 +15,12 @@ const routes: Routes = [
     path: '',
     children: [
       { path: 'reportes/reporte-averia', title: 'Reporte de Avería', component: FaultReportComponent },
+    ],
+  },
+  {
+    path: '',
+    children: [
+      { path: 'reportes/comprobante-ejecucion', title: 'Comprobante de Ejecución', component: ProofOfExecutionComponent },
     ],
   },
 ];

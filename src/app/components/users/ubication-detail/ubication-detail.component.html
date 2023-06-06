@@ -5,9 +5,37 @@
     <button type="button" class="btn-close" (click)="modal.close('by: close icon')" aria-label="Close"></button>
   </div>
   <div class="modal-body">
+    <div class="tabs-menu ">
+      <!-- Tabs -->
+      <ul ngbNav #nav1="ngbNav" [activeId]="1" class="panel-tabs">
+        <li class="me-2" [ngbNavItem]="1">
+          <a ngbNavLink>Ubicación</a>
+          <ng-template ngbNavContent>
 
-    <div id="myMap" style="position:relative;height:450px;"></div>
+            <div id="myMap" style="position:relative;height:450px;"></div>
 
+          </ng-template>
+        </li>
+        <li class="me-2" [ngbNavItem]="2">
+          <a ngbNavLink>Foto</a>
+          <ng-template ngbNavContent>
+
+            <div>
+              <img src="/src/assets/images/files/doc.png" alt="pic">
+            </div>
+
+
+
+          </ng-template>
+        </li>
+
+
+      </ul>
+    </div>
+
+  </div>
+  <div class="panel-body tabs-menu-body">
+    <div [ngbNavOutlet]="nav1"></div>
   </div>
   <div class="modal-footer">
 

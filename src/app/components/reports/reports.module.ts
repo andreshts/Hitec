@@ -14,6 +14,7 @@ import { MaterialModuleModule } from 'src/app/materialModule/material-module/mat
 import { SharedModule } from 'src/app/shared/shared.module';
 import { FaultReportDetailsComponent } from './fault-report/fault-report-details/fault-report-details.component';
 import { GalleryModule } from '@ks89/angular-modal-gallery';
+import { MaintenanceReportDetailsComponent } from './maintenance-report/maintenance-report-details/maintenance-report-details.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { GalleryModule } from '@ks89/angular-modal-gallery';
     FaultReportComponent,
     MaintenanceReportComponent,
     ProofOfExecutionComponent,
-    FaultReportDetailsComponent
+    FaultReportDetailsComponent,
+    MaintenanceReportDetailsComponent
   ],
   imports: [
     CommonModule,

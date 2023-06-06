@@ -1,5 +1,4 @@
 import { Component, TemplateRef, ViewChild } from '@angular/core';
-import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import {
   Image,
   ModalGalleryService,
@@ -7,21 +6,22 @@ import {
 
 } from '@ks89/angular-modal-gallery';
 import { DomSanitizer } from '@angular/platform-browser';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
-  selector: 'app-fault-report-details',
-  templateUrl: './fault-report-details.component.html',
-  styleUrls: ['./fault-report-details.component.scss']
+  selector: 'app-maintenance-report-details',
+  templateUrl: './maintenance-report-details.component.html',
+  styleUrls: ['./maintenance-report-details.component.scss']
 })
-export class FaultReportDetailsComponent {
-  @ViewChild('faulReportsDetailModal') faulReportsDetailModal!: TemplateRef<any>;
+export class MaintenanceReportDetailsComponent {
+  @ViewChild('maintenanceReportsDetailModal') maintenanceReportsDetailModal!: TemplateRef<any>;
   constructor(private modalService: NgbModal, private modalGalleryService: ModalGalleryService, private sanitizer: DomSanitizer) {
 
   }
 
   openModal() {
     this.modalService
-      .open(this.faulReportsDetailModal, { size: 'lg', centered: true })
+      .open(this.maintenanceReportsDetailModal, { size: 'lg', centered: true })
       .result.then((result) => {
         console.log('Modal closed: ' + result);
       })
@@ -52,8 +52,6 @@ export class FaultReportDetailsComponent {
   }
 
   addRandomImage(): void {
-
-
     // add also to imagesRect
     const imageRectToCopy: Image = this.imagesRect[Math.floor(Math.random() * this.imagesRect.length)];
     const newImageRect: Image = new Image(this.imagesRect.length - 1 + 1, imageRectToCopy.modal, imageRectToCopy.plain);

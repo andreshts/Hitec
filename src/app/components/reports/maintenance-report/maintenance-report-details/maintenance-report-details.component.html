@@ -1,0 +1,390 @@
+<!-- Modal -->
+<ng-template #maintenanceReportsDetailModal let-modal>
+  <div class="modal-header">
+    <h5 class="modal-title" id="exampleModalLabel">Detalles del reporte</h5>
+    <button type="button" class="btn-close" (click)="modal.close('by: close icon')" aria-label="Close"></button>
+  </div>
+  <div class="modal-body">
+
+
+
+    <div class="tabs-menu ">
+      <!-- Tabs -->
+      <ul ngbNav #nav1="ngbNav" [activeId]="1" class="panel-tabs">
+        <li class="me-2" [ngbNavItem]="1">
+          <a ngbNavLink>Dispositivo</a>
+          <ng-template ngbNavContent>
+            <div class="row">
+              <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-2">
+
+                <div class="mt-3">
+                  <span class="float-start">
+                    Dispositivo
+                  </span>
+                </div>
+                <div class="mt-3">
+                  <span class="float-end text-muted">Prueba
+                  </span>
+                </div>
+              </div>
+              <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-2">
+
+                <div class="mt-3">
+                  <span class="float-start">
+                    Fecha Datos
+                  </span>
+                </div>
+                <div class="mt-3">
+                  <span class="float-end text-muted">Prueba
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-2">
+
+                <div class="mt-3">
+                  <span class="float-start">
+                    Hora inicio
+                  </span>
+                </div>
+                <div class="mt-3">
+                  <span class="float-end text-muted">Prueba
+                  </span>
+                </div>
+              </div>
+              <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-2">
+
+                <div class="mt-3">
+                  <span class="float-start">
+                    Hora final
+                  </span>
+                </div>
+                <div class="mt-3">
+                  <span class="float-end text-muted">Prueba
+                  </span>
+                </div>
+              </div>
+
+            </div>
+
+
+            <div class="row">
+              <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-2">
+
+                <div class="mt-3">
+                  <span class="float-start">
+                    Responsable HITEC
+                  </span>
+                </div>
+                <div class="mt-3">
+                  <span class="float-end text-muted">Prueba
+                  </span>
+                </div>
+              </div>
+              <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-2">
+
+                <div class="mt-3">
+                  <span class="float-start">
+                    Cédula
+                  </span>
+                </div>
+                <div class="mt-3">
+                  <span class="float-end text-muted">Prueba
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+
+
+              <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-2">
+
+                <div class="mt-3">
+                  <span class="float-start">
+                    Observaciones (Anotar tiempo invertido y O.T.)
+                  </span>
+                </div>
+                <div class="mt-3">
+                  <span class="float-end text-muted">Prueba
+                  </span>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+        </li>
+        <li class="me-2" [ngbNavItem]="2">
+          <a ngbNavLink>Cliente</a>
+          <ng-template ngbNavContent>
+            <div class="row">
+              <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-2">
+
+                <div class="mt-3">
+                  <span class="float-start">
+                    Cliente
+                  </span>
+                </div>
+                <div class="mt-3">
+                  <span class="float-end text-muted">Prueba
+                  </span>
+                </div>
+              </div>
+              <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-2">
+
+                <div class="mt-3">
+                  <span class="float-start">
+                    Encargado
+                  </span>
+                </div>
+                <div class="mt-3">
+                  <span class="float-end text-muted">Prueba
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-2">
+
+                <div class="mt-3">
+                  <span class="float-start">
+                    Nombre del cliente
+                  </span>
+                </div>
+                <div class="mt-3">
+                  <span class="float-end text-muted">Prueba
+                  </span>
+                </div>
+              </div>
+              <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-2">
+
+                <div class="mt-3">
+                  <span class="float-start">
+                    Cédula
+                  </span>
+                </div>
+                <div class="mt-3">
+                  <span class="float-end text-muted">Prueba
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+
+              <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-2">
+
+                <div class="mt-3">
+                  <span class="float-start">
+                    Teléfono
+                  </span>
+                </div>
+                <div class="mt-3">
+                  <span class="float-end text-muted">Prueba
+                  </span>
+                </div>
+              </div>
+              <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-2">
+
+                <div class="mt-3">
+                  <span class="float-start">
+                    Email
+                  </span>
+                </div>
+                <div class="mt-3">
+                  <span class="float-end text-muted">Prueba
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+
+
+            </div>
+          </ng-template>
+        </li>
+        <li class="me-2" [ngbNavItem]="3">
+          <a ngbNavLink>Reporte</a>
+          <ng-template ngbNavContent>
+            <div class="row">
+              <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-2">
+
+                <div class="mt-3">
+                  <span class="float-start">
+                    Día de la semana
+                  </span>
+                </div>
+                <div class="mt-3">
+                  <span class="float-end text-muted">Prueba
+                  </span>
+                </div>
+              </div>
+              <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-2">
+
+                <div class="mt-3">
+                  <span class="float-start">
+                    No. de Personas
+                  </span>
+                </div>
+                <div class="mt-3">
+                  <span class="float-end text-muted">Prueba
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-2">
+
+                <div class="mt-3">
+                  <span class="float-start">
+                    No. Horas
+                  </span>
+                </div>
+                <div class="mt-3">
+                  <span class="float-end text-muted">Prueba
+                  </span>
+                </div>
+              </div>
+              <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-2">
+
+                <div class="mt-3">
+                  <span class="float-start">
+                    Ubicación
+                  </span>
+                </div>
+                <div class="mt-3">
+                  <span class="float-end text-muted">Prueba
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-2">
+
+                <div class="mt-3">
+                  <span class="float-start">
+                    Modelo
+                  </span>
+                </div>
+                <div class="mt-3">
+                  <span class="float-end text-muted">Prueba
+                  </span>
+                </div>
+              </div>
+              <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-2">
+
+                <div class="mt-3">
+                  <span class="float-start">
+                    Serie
+                  </span>
+                </div>
+                <div class="mt-3">
+                  <span class="float-end text-muted">Prueba
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-2">
+
+                <div class="mt-3">
+                  <span class="float-start">
+                    Placa de equipo
+                  </span>
+                </div>
+                <div class="mt-3">
+                  <span class="float-end text-muted">Prueba
+                  </span>
+                </div>
+              </div>
+              <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-2">
+
+                <div class="mt-3">
+                  <span class="float-start">
+                   No. Activo
+                  </span>
+                </div>
+                <div class="mt-3">
+                  <span class="float-end text-muted">Prueba
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-2">
+
+                <div class="mt-3">
+                  <span class="float-start">
+                    Materiales
+                  </span>
+                </div>
+                <div class="mt-3">
+                  <span class="float-end text-muted">Prueba
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-2">
+
+                <div class="mt-3">
+                  <span class="float-start">
+                    Detalle del trabajo realizado
+                  </span>
+                </div>
+                <div class="mt-3">
+                  <span class="float-end text-muted">Prueba
+                  </span>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+        </li>
+        <li class="me-2" [ngbNavItem]="4">
+          <a ngbNavLink>Fotos</a>
+          <ng-template ngbNavContent>
+            <div class="demo-gallery card">
+              <div class="card-header">
+                <div class="card-title">Galería</div>
+              </div>
+              <div class="card-body">
+                <ul id="lightgallery" class="list-unstyled row">
+                  <li *ngFor="let img of imagesRect" class="col-xs-6 col-sm-4 col-md-4 col-xl-3 mb-5 border-bottom-0"
+                    data-responsive="./assets/images/photos/1.jpg" data-src="./assets/images/photos/1.jpg"
+                    data-sub-html="<h4>Gallery Image 1</h4><p> Many desktop publishing packages and web page editors now use Lorem Ipsum</p>">
+                    <a href="javascript:void(0)">
+                      <img class="img-responsive rounded-3" [src]="img.modal.img" alt="Thumb-1"
+                        (click)="openImageModalRowDescription(2, img)">
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="row mb-5">
+              <div class="col-md-6 mt-1 d-none d-md-block">1 - 10 of 234 photos</div>
+              <div class="col-md-6">
+                <div class="float-end">
+                  <ngb-pagination [collectionSize]="50" [page]="5" aria-label="Default pagination"></ngb-pagination>
+                </div>
+              </div><!-- COL-END -->
+            </div>
+          </ng-template>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+  <div class="panel-body tabs-menu-body">
+    <div [ngbNavOutlet]="nav1"></div>
+  </div>
+
+
+
+
+
+  <div class="modal-footer">
+
+    <button type="button" class="btn btn-secondary" (click)="modal.close('by: close button')">Cerrar</button>
+
+  </div>
+</ng-template>
+

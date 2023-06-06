@@ -7,6 +7,9 @@ import { RegisterUserComponent } from './register-user/register-user.component';
 import { TimeControlComponent } from './time-control/time-control.component';
 import { UbicationDetailComponent } from './ubication-detail/ubication-detail.component';
 import { UsersRoutingModule } from './users-routing.module';
+import { NgxPaginationModule } from 'ngx-pagination';
+import { MaterialModuleModule } from 'src/app/materialModule/material-module/material-module.module';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
@@ -20,7 +23,10 @@ import { UsersRoutingModule } from './users-routing.module';
         CommonModule,
         SharedModule,
         NgxDatatableModule,
-        UsersRoutingModule
+        UsersRoutingModule,
+        NgxPaginationModule,
+        MaterialModuleModule,
+        NgbModule,
     ]
 })
 export class UsersModule { }

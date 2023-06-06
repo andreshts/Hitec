@@ -1,1 +1,61 @@
-<p>maintenance-report works!</p>
+<app-page-header title="Reportes" active_item="Reportes de mantenimiento"></app-page-header>
+
+
+<div class="row">
+  <div class="col-md-12 stretch-card">
+    <div class="card">
+      <div class="card-body">
+
+        <div>
+          <div class="ms-auto align-self-center" style="text-align: right;">
+            <a href="javascript:void(0)" class="btn btn-primary btn-icon text-white me-1">
+              <i class="fe fe-plus"></i>
+            </a>
+          </div>
+
+          <input type="text" class="form-control bg-transparent border-0 rounded-0 text-center"
+            style="padding: 8px; margin: 15px auto; width: 30%" placeholder="Type to filter the name column..."
+            (keyup)="updateFilter($event)" />
+
+          <ngx-datatable #table class="material" [rows]="rows" [loadingIndicator]="loadingIndicator"
+            [columnMode]="ColumnMode.force" [footerHeight]="50" [limit]="10" rowHeight="auto"
+            [reorderable]="reorderable" [scrollbarH]="scrollBarHorizontal" responsive="true">
+            <ngx-datatable-column name="Dispositivo" class="force-flex flex-nowrap" [flexGrow]="1">
+              <ng-template let-row="row" ngx-datatable-cell-template>
+                {{row.name}}
+              </ng-template>
+            </ngx-datatable-column>
+
+            <ngx-datatable-column name="Cliente">
+              <ng-template let-row="row" ngx-datatable-cell-template>
+                Prueba
+              </ng-template>
+            </ngx-datatable-column>
+            <ngx-datatable-column name="Tipo certificado">
+              <ng-template let-row="row" ngx-datatable-cell-template>
+                Prueba
+              </ng-template>
+            </ngx-datatable-column>
+
+
+
+            <ngx-datatable-column name="Ubicación">
+              <ng-template let-row="row" ngx-datatable-cell-template>
+                Prueba
+              </ng-template>
+            </ngx-datatable-column>
+
+
+
+            <ngx-datatable-column name="Detalles del reporte">
+              <ng-template let-row="row" ngx-datatable-cell-template>
+                <button (click)="openMaintenanceReportDetailModal()" class="btn btn-sm btn-primary">Ver</button>
+              </ng-template>
+            </ngx-datatable-column>
+          </ngx-datatable>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<app-maintenance-report-details></app-maintenance-report-details>
