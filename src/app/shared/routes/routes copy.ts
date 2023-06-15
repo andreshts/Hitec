@@ -34,4 +34,11 @@ export const content: Routes = [
         (m) => m.UsersModule
       ),
   },
+  {
+    path: '',
+    loadChildren: () =>
+      import('../../components/km-control/km-control.module').then(
+        (m) => m.KmControlModule
+      ),
+  },
 ];

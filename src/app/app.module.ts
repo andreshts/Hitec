@@ -19,6 +19,7 @@ import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
 import { dataReaducer } from './shared/ngrx/e-commerce/shop.reducers';
 import { QrCodeModule } from 'ng-qrcode';
 
+
 @NgModule({
   declarations: [AppComponent],
   imports: [
